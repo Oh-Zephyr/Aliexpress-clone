@@ -1,110 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Aliexpress - Online Shopping for popular Electronics, Fashion, Home ...
-    </title>
-    <link rel="shortcut icon" href="./pictures/1.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    />
 
-    <!-- jQuery library -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Aliexpress - Online Shopping for popular Electronics, Fashion, Home ...
+  </title>
+  <link rel="shortcut icon" href="./pictures/1.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
 
-    <!-- Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/aliexpress.css" />
-  </head>
-  <body>
-    <!-- I need to screenshot the aliexpress logo and favicon for the use of the website cloning -->
-    <div class="page d-flex ">
-      <header>
-        <!-- This is the aliexpress top page  -->
-        <!-- fonts used are arial and opensans -->
-        <div class="pagehead d-flex bg-primary ">
-          <div class="row1 bg-warning"></div>
-          <div class="row2 d-flex justify-content-around align-items-center bg-danger">
-            <div class="search1 d-flex justify-content-around align-items-end bg-warning w-90 h-60">
-              <div class="logo bg-light w-15 h-70"></div>
-              <div class="seek bg-light w-60 h-70"></div>
-              <div class="cart bg-light w-15 h-70"></div>
-            </div>
-            <div class="search2 bg-success w-55 h-30"></div>
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/aliexpress.css" />
+</head>
+
+<body>
+  <!-- I need to screenshot the aliexpress logo and favicon for the use of the website cloning -->
+  <div class="page d-flex">
+    <header>
+      <!-- This is the aliexpress top page  -->
+      <!-- fonts used are arial and opensans -->
+      <!-- there are two divs that would need to take positon absolute; the side dark and the welcome sign-in part,
+       the search line would take position stick with z-index,  -->
+      <div class="pagehead d-flex bg-primary">
+        <div class="row1 bg-warning"></div>
+        <div class="row2 d-flex justify-content-around align-items-center bg-danger">
+          <div class="search1 d-flex justify-content-around align-items-end bg-warning w-90 h-60">
+            <div class="logo bg-light w-15 h-70"></div>
+            <div class="seek bg-light w-60 h-70"></div>
+            <div class="cart bg-light w-15 h-70"></div>
           </div>
+          <div class="search2 bg-success w-55 h-30"></div>
         </div>
-      </header>
-      <main>
-        <div class="pagebody d-flex justify-content-around align-items-center bg-success">
-          <div class="pagebody1 d-flex justify-content-between bg-warning w-90 h-30">
-            <div class="left w-25 h-100 bg-primary rad"></div>
-            <div class="right d-flex w-73 h-100 bg-success justify-content-between">
-              <div class="up bg-light h-07 w-100 "></div>
-              <div class="down d-flex justify-content-between bg-dark h-90 w-100">
-                <div class="downleft d-flex flex-column justify-content-between  w-73 h-100 bg-light">
-                  <div class="downleftup w-100 h-55 bg-dark rad">
-                    <!-- carousel -->
-                  </div>
-                  <div class="downleftdown d-flex w-100 h-40 bg-dark rad">
-                    <div class="dldcontent1 d-flex justify-content-evenly align-items-center flex-column w-20 h-100 bg-primary">
-                      <div class="pic w-95 h-40 bg-danger"></div>
-                      <div class="btnfollowers w-95 h-10 bg-danger">
-                        <!-- buttons then use paddding to take it up on the picture -->
-                      </div>
-                      <div class="picdes w-95 h-30 bg-success"></div>
+      </div>
+    </header>
+    <main>
+      <div class="pagebody d-flex justify-content-around align-items-center bg-success">
+        <div class="pagebody1 d-flex justify-content-between bg-warning w-90 h-30">
+          <div class="left w-25 h-100 bg-primary rad"></div>
+          <div class="right d-flex w-73 h-100 bg-success justify-content-between">
+            <div class="up bg-light h-07 w-100"></div>
+            <div class="down d-flex justify-content-between bg-dark h-90 w-100">
+              <div class="downleft d-flex flex-column justify-content-between w-73 h-100 bg-light">
+                <div class="downleftup w-100 h-55 bg-dark rad">
+                  <!-- carousel -->
+                </div>
+                <div class="downleftdown d-flex w-100 h-40 bg-dark rad">
+                  <div
+                    class="dldcontent1 d-flex justify-content-evenly align-items-center flex-column w-20 h-100 bg-primary">
+                    <div class="pic w-95 h-40 bg-danger"></div>
+                    <div class="btnfollowers w-95 h-10 bg-danger">
+                      <!-- buttons then use paddding to take it up on the picture -->
                     </div>
+                    <div class="picdes w-95 h-30 bg-success"></div>
                   </div>
                 </div>
-                <div class="downright d-flex flex-column align-items-center justify-content-evenly w-25 h-100 bg-light rad">
-                  <div class="fa-solid fa-user w-90 h-10 bg-success rad"></div>
-                  <div class="text w-90 h-03 bg-success rad"></div>
-                  <div class="btns w-90 h-10 bg-success rad"></div>
-                  <div class="banner w-90 h-70 bg-success rad"></div>
-                </div>
+              </div>
+              <div
+                class="downright d-flex flex-column align-items-center justify-content-evenly w-25 h-100 bg-light rad">
+                <div class="fa-solid fa-user w-90 h-10 bg-success rad"></div>
+                <div class="text w-90 h-03 bg-success rad"></div>
+                <div class="btns w-90 h-10 bg-success rad"></div>
+                <div class="banner w-90 h-70 bg-success rad"></div>
               </div>
             </div>
           </div>
-          <div class="pagebody2 d-flex flex-column align-items-center bg-danger w-90 h-60">
-            <div class="top d-flex justify-content-around w-100 h-04 bg-light">
-              <div class="content d-flex justify-content-between w-100 h-100 bg-dark">
-                <div class="super d-flex align-items-center pl-4 w-20 h-100 bg-primary">Lorem ipsum dolor </div>
-                <div class="timer w-50 h-100 bg-primary">
-                  <div class="buttons">
-                    <!-- Two buttons  -->
-                  </div>
-                  <div class="countdown"></div>
-                </div>
-                <div class="more d-flex align-items-center justify-content-right w-20 h-100 bg-primary pr-3">
-                  <!-- View more button with caret down -->
-                  Lorem ipsum dolor sit amet. </div>
-                  <!-- The main blocks after the pagebod1 should be Superdeals, Plus offers and Free shipping -->
+        </div>
+        <div class="pagebody2 d-flex flex-column justify-content-between align-items-center bg-danger w-90 h-60 rad">
+          <div class="super d-flex flex-column align-items-center rad w-95 h-23 bg-danger">
+            <div class="top d-flex justify-content-between rad w-100 h-15 bg-light">
+              <div class="super-icon w-20 h-100 bg-primary rad"></div>
+              <div class="timer-countdown w-50 h-100 bg-primary"></div>
+              <div class="text-more w-20 h-100 bg-primary rad"></div>
+            </div>
+            <div class="down d-flex justify-content-between align-items-center w-100 h-85 rad bg-light">
+              <div
+                class="content rad d-flex flex-column justify-content-between align-items-center w-19 h-95 bg-primary">
+                <div class="pic w-100 h-60 bg-warning rad"></div>
+                <div class="amt w-100 h-10 bg-warning"></div>
+                <div class="orders w-100 h-10 bg-warning"></div>
+                <div class="limited w-100 h-10 bg-warning"></div>
               </div>
             </div>
-            <div class="bottom"></div>
           </div>
-          <div class="pagebody3 bg-primary w-90 h-03">
-            <!-- This should contain view more products -->
+          <div class="plus d-flex flex-column align-items-center rad w-95 h-23 bg-primary rad">
+            <div class="top d-flex justify-content-between rad w-100 h-15 bg-light">
+              <div class="plus-icon w-10 h-100 bg-primary"></div>
+              <div class="dicount-shipping-icon w-78 h-100 bg-success"></div>
+              <div class="text-more w-10 h-100 bg-primary rad"></div>
+            </div>
+            <div class="down d-flex justify-content-between align-items-center w-100 h-85 rad bg-light">
+              <div
+                class="content rad d-flex flex-column justify-content-between align-items-center w-16 h-95 bg-primary">
+                <div class="pic w-100 h-60 bg-warning rad"></div>
+                <div class="amt w-100 h-10 bg-warning"></div>
+                <div class="del-amt w-100 h-10 bg-warning"></div>
+                <div class="percent-off w-100 h-10 bg-warning"></div>
+              </div>
+            </div>
           </div>
-          <div class="pagebody4 bg-dark w-90 h-03">
-            <!-- This should contain dicover and the likes buttons -->
+          <div class="moreproducts w-95 h-05 bg-success">
+            <!-- The use of lines and then add the text "More to Love" -->
+          </div>
+          <div class="bigmore d-flex justify-content-between flex-column w-95 h-46 bg-secondary">
+            <div class="morerow1 d-flex justify-content-between w-100 h-49 bg-light">
+              <div
+                class="morecontents d-flex flex-column align-items-center justify-content-between w-16 h-100 bg-primary rad">
+                <div class="contentpic w-90 h-55 bg-light"></div>
+                <div class="descriptionheader w-90 h-07 bg-light"></div>
+                <div class="amt1 w-90 h-07 bg-light"></div>
+                <div class="deletedamt w-90 h-07 bg-light"></div>
+                <div class="limited w-90 h-07 bg-light"></div>
+                <div class="sold-and-star w-90 h-07 bg-light"></div>
+                <div class="shipping w-90 h-07 bg-light"></div>
+              </div>
+            </div>
+            <div class="morerow2 w-100 h-49 bg-primary">
+              <div
+                class="morecontents d-flex flex-column align-items-center justify-content-between w-16 h-100 bg-warning rad">
+                <div class="contentpic w-90 h-55 bg-light"></div>
+                <div class="descriptionheader w-90 h-07 bg-light"></div>
+                <div class="amt1 w-90 h-07 bg-light"></div>
+                <div class="deletedamt w-90 h-07 bg-light"></div>
+                <div class="limited w-90 h-07 bg-light"></div>
+                <div class="sold-and-star w-90 h-07 bg-light"></div>
+                <div class="shipping w-90 h-07 bg-light"></div>
+              </div>
+            </div>
           </div>
         </div>
-      </main>
-      <footer>
-        <div class="pagefoot d-flex align-items-center bg-warning">
-          <div class="pagefoot1 bg-danger w-90 h-25"></div>
-          <div class="pagefoot2 bg-secondary w-90 h-30"></div>
-          <div class="pagefoot3 bg-success w-90 h-30"></div>
-          <div class="pagefoot4 bg-dark w-90 h-15"></div>
+        <div class="pagebody3 bg-primary w-90 h-03">
+          <!-- This should contain view more products -->
         </div>
-      </footer>
-    </div>
-  </body>
+        <div class="pagebody4 bg-dark w-90 h-03">
+          <!-- This should contain dicover and the likes  buttons -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="pagefoot d-flex align-items-center bg-warning">
+        <!-- border bottom is needed; color should be the page intial color and should be done when inputing the data -->
+        <div class="pagefoot1 d-flex justify-content-around bg-danger w-100 h-25">
+          <div class="content d-flex align-items-center justify-content-between w-89 h-100 bg-light">
+            <div class="content1 d-flex flex-column align-items-center justify-content-around w-16 h-90 bg-primary">
+              <div class="icon align-items-center justify-content-around w-100 h-30 bg-warning"></div>
+              <div class="heading align-items-center justify-content-around w-95 h-30 bg-warning"></div>
+              <div class="summary align-items-center justify-content-around w-95 h-30 bg-warning"></div>
+            </div>
+          </div>
+        </div>
+        <div class="pagefoot2 d-flex justify-content-around bg-secondary w-100 h-30">
+          <div class="contenthold d-flex align-items-center justify-content-between w-89 h-100 bg-danger">
+            <div class="content-first d-flex flex-column align-items-center justify-content-around w-24 h-100 bg-dark">
+              <div class="icon align-items-center justify-content-around w-100 h-30 bg-warning"></div>
+              <div class="heading align-items-center justify-content-around w-95 h-30 bg-warning"></div>
+              <div class="summary align-items-center justify-content-around w-95 h-30 bg-warning"></div>
+            </div>
+            <div class="content-others d-flex flex-column align-items-center justify-content-around w-24 h-100 bg-dark">
+              <div class="icon align-items-center justify-content-around w-100 h-30 bg-warning"></div>
+              <div class="heading align-items-center justify-content-around w-95 h-30 bg-warning"></div>
+              <div class="summary align-items-center justify-content-around w-95 h-30 bg-warning"></div>
+            </div>
+          </div>
+        </div>
+        <div class="pagefoot3  d-flex flex-column justify-content-around align-items-center bg-success w-100 h-30">
+        <!-- These things should be buttons so that they can be hovered on and then clickable -->
+          <div class="top d-flex align-items-center justify-content-between w-89 h-100 bg-danger">
+            <div class="left  d-flex flex-column justify-content-around bg-light w-45 h-100">
+              <div class="boldtext w-100 h-50 bg-dark"></div>
+              <div class="normaltext w-100 h-50 bg-dark"></div>
+            </div>
+            <div class="right  d-flex flex-column justify-content-around bg-light w-50 h-100">
+              <div class="boldtext w-100 h-50 bg-dark"></div>
+              <div class="normaltext w-100 h-50 bg-dark"></div>
+            </div>
+          </div>
+          <div class="down d-flex align-items-center justify-content-between w-89 h-100 bg-danger">
+            <div class="left  d-flex flex-column justify-content-around bg-primary w-45 h-100">
+              <div class="boldtext w-100 h-50 bg-dark"></div>
+              <div class="normaltext w-100 h-50 bg-dark"></div>
+            </div>
+            <div class="right  d-flex flex-column justify-content-around bg-primary w-50 h-100">
+              <div class="boldtext w-100 h-50 bg-dark"></div>
+              <div class="normaltext w-100 h-50 bg-dark"></div>
+            </div>
+          </div>
+        </div>
+        <div class="pagefoot4  d-flex justify-content-around bg-secondary bg-dark w-100 h-15">
+          <div class="content d-flex align-items-center justify-content-between w-89 h-100 bg-danger"></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
