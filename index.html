@@ -8,7 +8,7 @@
   <title>
     Aliexpress - Online Shopping for popular Electronics, Fashion, Home ...
   </title>
-  <link rel="shortcut icon" href="./pictures/1.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="./resources/dwd1.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
 
   <!-- jQuery library -->
@@ -30,46 +30,183 @@
       <!-- fonts used are arial and opensans -->
       <!-- there are two divs that would need to take positon absolute; the side dark and the welcome sign-in part,
        the search line would take position stick with z-index,  -->
-      <div class="pagehead d-flex bg-primary">
-        <div class="row1 bg-warning"></div>
-        <div class="row2 d-flex justify-content-around align-items-center bg-danger">
-          <div class="search1 d-flex justify-content-around align-items-end bg-warning w-90 h-60">
-            <div class="logo bg-light w-15 h-70"></div>
-            <div class="seek bg-light w-60 h-70"></div>
-            <div class="cart bg-light w-15 h-70"></div>
+      <div class="pagehead d-flex">
+        <div class="row1 d-flex align-items-center justify-content-right pr-4">
+          <button class="no-bder">
+            Sell on aliexpress 
+            <i class="fa-solid fa-caret-down"></i>
+             |
+          </button>
+          <button class="no-bder"> 
+            Help 
+            <span><i class="fa-solid fa-caret-down"></i></span>
+          </button>
+          <button class="no-bder"> Buyer Protection</button>
+          <button class="no-bder">
+            <span><i class="fa-solid fa-mobile-button"></i></span>
+            App |</button>
+          <button class="no-bder">
+             Location 
+             <span><i class="fa-solid fa-caret-down"></i></span>
+             |</button>
+          <button class="no-bder">
+            <span><i class="fa-regular fa-heart"></i></span>
+            Wishlist</button>
+          <button class="no-bder">
+            <span><i class="fa-regular fa-user"></i></span>
+            Account 
+            <span><i class="fa-solid fa-caret-down"></i></span> </button>
+        </div>
+        <div class="row2 d-flex justify-content-around align-items-center">
+          <div class="search1 d-flex justify-content-around align-items-end w-90 h-60">
+            <div class="logo bg-light w-15 h-70">
+              <a href="https://www.aliexpress.com">
+                <img src="./resources/dwd.png" alt="Aliexpress logo" title="Aliexpress" height="100%" width="100%">
+              </a>
+            </div>
+            <div class="seek bbder rad-small d-flex justify-content-between align-items-center bg-light w-60 h-70">
+              <div class="searchbox d-flex align-items-center justify-content-around w-75 h-100">
+                <form action="https://www.aliexpress.com" method="get" autocomplete="on" novalidate>
+                  <input type="text" placeholder="Iphone 11 pro max case" name="Text" maxlength="50" >
+                </form>
+              </div>
+              <div class="categories d-flex align-items-center justify-content-around w-18 h-100 bder-l bder-r">
+                <span>
+                  All Categories
+                </span>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+              </div>
+              <div class="fa-solid fa-magnifying-glass d-flex align-items-center justify-content-around text-light bg-danger w-07 h-100 rad-small-right"></div>
+            </div>
+            <div class="cart d-flex align-items-center justify-content-left bg-light w-15 h-70 text-dark">
+              <span><i class="fa-solid fa-cart-shopping"></i></span>
+            </div>
           </div>
-          <div class="search2 bg-success w-55 h-30"></div>
+          <div class="search2 d-flex align-items-start w-55 h-30">
+            <button class="no-bder">car charger |</button>
+            <button class="no-bder">sd card |</button>
+            <button class="no-bder">makeup brushes |</button>
+            <button class="no-bder">power banks |</button>
+            <button class="no-bder">sunglasses for men |</button>
+            <button class="no-bder">usb flashdrives</button>
+          </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="pagebody d-flex justify-content-around align-items-center bg-success">
-        <div class="pagebody1 d-flex justify-content-between bg-warning w-90 h-30">
-          <div class="left w-25 h-100 bg-primary rad"></div>
-          <div class="right d-flex w-73 h-100 bg-success justify-content-between">
-            <div class="up bg-light h-07 w-100"></div>
-            <div class="down d-flex justify-content-between bg-dark h-90 w-100">
-              <div class="downleft d-flex flex-column justify-content-between w-73 h-100 bg-light">
+      <div class="pagebody d-flex justify-content-around align-items-center">
+        <div class="pagebody1 d-flex justify-content-between w-90 h-30">
+          <div class="left w-25 h-100 bg-light rad"></div>
+          <div class="right d-flex w-73 h-100 justify-content-between">
+            <div class="up d-flex justify-content-left align-items-center h-07 w-100">
+              <button class="no-bder text-danger">PLUS</button>
+              <button class="no-bder"><b>Cool Home Deals</b></button>
+              <button class="no-bder"><b>Super Deals</b></button>
+            </div>
+            <div class="down d-flex justify-content-between h-90 w-100">
+              <div class="downleft d-flex flex-column justify-content-between w-73 h-100">
                 <div class="downleftup w-100 h-55 bg-dark rad">
                   <!-- carousel -->
                 </div>
-                <div class="downleftdown d-flex w-100 h-40 bg-dark rad">
-                  <div
-                    class="dldcontent1 d-flex justify-content-evenly align-items-center flex-column w-20 h-100 bg-primary">
-                    <div class="pic w-95 h-40 bg-danger"></div>
-                    <div class="btnfollowers w-95 h-10 bg-danger">
-                      <!-- buttons then use paddding to take it up on the picture -->
+                <div class="downleftdown d-flex w-100 h-40 bg-white rad">
+                  <div class="dldcontent1 d-flex justify-content-between rad align-items-center flex-column w-20 h-100">
+                    <div class="pic rad w-95 h-55 bg-danger">
+                      <a href="http://www.aliexpress.com" class="rad">
+                        <img src="./resources/rsc1.jpg" alt="rsc1" class="rad" width="100%" height="100%">
+                      </a>
                     </div>
-                    <div class="picdes w-95 h-30 bg-success"></div>
+                    <div class="btnfollowers rad w-95 h-12 bg-warning">
+                      <!-- buttons then use paddding to take it up on the picture -->
+                      <button class="no-bder d-flex align-items-start justify-content-around">481687416 followers</button>
+                    </div>
+                    <div class="picdes d-flex align-items-center text-center justify-content-around w-95 h-30">
+                      Tech ideas for college - wireless Keyboards...
+                    </div>
+                  </div>
+                  <div class="dldcontent1 d-flex justify-content-between rad align-items-center flex-column w-20 h-100">
+                    <div class="pic w-95 h-55 bg-danger">
+                      <a href="http://www.aliexpress.com">
+                        <img src="./resources/rsc2.jpg" alt="rsc2" width="100%" height="100%">
+                      </a>
+                    </div>
+                    <div class="btnfollowers rad w-95 h-12 bg-warning">
+                      <!-- buttons then use paddding to take it up on the picture -->
+                      <button class="no-bder d-flex align-items-center justify-content-around">579049940 followers</button>
+                    </div>
+                    <div class="picdes d-flex align-items-center text-center justify-content-around w-95 h-30">
+                      Tech ideas - Bluetooth enabled smartwatches...
+                    </div>
+                  </div>
+                  <div class="dldcontent1 d-flex justify-content-between rad align-items-center flex-column w-20 h-100">
+                    <div class="pic w-95 h-55 bg-danger">
+                      <a href="http://www.aliexpress.com">
+                        <img src="./resources/rsc3.jpg" alt="rsc3" width="100%" height="100%">
+                      </a>
+                    </div>
+                    <div class="btnfollowers rad w-95 h-12 bg-warning">
+                      <!-- buttons then use paddding to take it up on the picture -->
+                      <button class="no-bder d-flex align-items-center justify-content-around">6480466134 followers</button>
+                    </div>
+                    <div class="picdes d-flex align-items-center text-center justify-content-around w-95 h-30">
+                      Tech portable power station for your devices...
+                    </div>
+                  </div>
+                  <div class="dldcontent1 d-flex justify-content-between rad align-items-center flex-column w-20 h-100">
+                    <div class="pic w-95 h-55 bg-danger">
+                      <a href="http://www.aliexpress.com">
+                        <img src="./resources/rsc4.jpg" alt="rsc4" width="100%" height="100%">
+                      </a>
+                    </div>
+                    <div class="btnfollowers rad w-95 h-122 bg-warning">
+                      <!-- buttons then use paddding to take it up on the picture -->
+                      <button class="no-bder d-flex align-items-center justify-content-around">7894254484 followers</button>
+                    </div>
+                    <div class="picdes d-flex align-items-center text-center justify-content-around w-95 h-30">
+                      Best sound quality for earphones BEST DEALS...
+                    </div>
+                  </div>
+                  <div class="dldcontent1 d-flex justify-content-between rad align-items-center flex-column w-20 h-100">
+                    <div class="pic w-95 h-55 bg-danger">
+                      <a href="http://www.aliexpress.com">
+                        <img src="./resources/rsc5.jpg" alt="rsc5" width="100%" height="100%">
+                      </a>
+                    </div>
+                    <div class="btnfollowers rad w-95 h-12 bg-warning">
+                      <!-- buttons then use paddding to take it up on the picture -->
+                      <button class="no-bder d-flex align-items-center justify-content-around">8457961450 followers</button>
+                    </div>
+                    <div class="picdes d-flex align-items-center text-center justify-content-around w-95 h-30">
+                      Best 100W GAn charger for your phone...
+                    </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="downright d-flex flex-column align-items-center justify-content-evenly w-25 h-100 bg-light rad">
-                <div class="fa-solid fa-user w-90 h-10 bg-success rad"></div>
-                <div class="text w-90 h-03 bg-success rad"></div>
-                <div class="btns w-90 h-10 bg-success rad"></div>
-                <div class="banner w-90 h-70 bg-success rad"></div>
+              <div class="downright d-flex flex-column align-items-center justify-content-evenly w-25 h-100 bg-light rad">
+                <div class="circle-holder d-flex align-items-center justify-content-around w-90 h-10 rad">
+                  <!-- fa-user and circle; -->
+                  <div class="circle d-flex justify-content-around align-items-center">
+                    <span>
+                      <i class="fa-solid fa-user text-dark"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="text-only d-flex justify-content-around align-items-center w-90 h-03 ">
+                  <span class="smalltext">Welcome to Aliexpress</span>
+                </div>
+                <div class="btns d-flex justify-content-around align-items-center  w-90 h-10 rad">
+                  <button class="btns-1 no-bder-o pl-2 pr -2 pt-1 pb-1 rad bg-orange text-light">REGISTER</button>
+                  <button class="btns-1 no-bder-o pl-2 pr -2 pt-1 pb-1 rad bg-lgrey">SIGN-IN</button>
+                </div>
+                <div class="banner  d-flex flex-column justify-content-around align-items-center w-90 h-70 bg-lgrey rad">
+                  <!-- divide into 3 layers and then insert the necessary -->
+                    <div class="exclusive d-flex align-items-center justify-content-around w-100 h-15 text-dark pl-1">Exclusive offers</div>
+                    <div class="text-2 d-flex align-items-center text-center justify-content-around w-100 h-30 text-dark pl-1">Just for new Aliexpress members!</div>
+                    <div class="righty w-95 h-50">
+                      <a href="http://www.aliexpress.com">
+                        <img src="./resources/apx1.webp" alt="hdp2" width="100%" height="100%" title="Exclusive offers">
+                      </a>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -107,7 +244,7 @@
               </div>
             </div>
           </div>
-          <div class="moreproducts w-95 h-05 bg-success">
+          <div class="moreproducts d-flex align-items-center justify-content-around w-95 h-05 bg-success">
             <!-- The use of lines and then add the text "More to Love" -->
           </div>
           <div class="bigmore d-flex justify-content-between flex-column w-95 h-46 bg-secondary">
@@ -137,11 +274,22 @@
             </div>
           </div>
         </div>
-        <div class="pagebody3 bg-primary w-90 h-03">
+        <div class="pagebody3 d-flex align-items-center justify-content-around w-90 h-03">
           <!-- This should contain view more products -->
+          <button class="mpts bg-orange rad-big">View more</button>
         </div>
-        <div class="pagebody4 bg-dark w-90 h-03">
+        <div class="pagebody4 d-flex align-items-center justify-content-around w-90 h-03">
           <!-- This should contain dicover and the likes  buttons -->
+          <buttons class="no-bder text-lgrey">Discover more</buttons>
+          <buttons class="no-bder text-lgrey">Double 11 festival |</buttons>
+          <buttons class="no-bder text-lgrey">Beauty Care Tips |</buttons>
+          <buttons class="no-bder text-lgrey">Aliepxress 11.11 |</buttons>
+          <buttons class="no-bder text-lgrey">Black Friday |</buttons>
+          <buttons class="no-bder text-lgrey">Singles Day |</buttons>
+          <buttons class="no-bder text-lgrey">Double 11 shopping festival |</buttons>
+          <buttons class="no-bder text-lgrey">Double 11 shopping deal |</buttons>
+          <buttons class="no-bder text-lgrey">11.11 |</buttons>
+          <buttons class="fa-solid fa-caret-down text-lgrey no-bder"> |</buttons>
         </div>
       </div>
     </main>
