@@ -9,9 +9,9 @@ html,body{
     padding: 0px;
 }
 .page{
-    height: 270vh;
+    height: 320vh;
     width: 100%;
-    background-color: #F2F2F2 !important;
+    /* background-color: #F2F2F2 !important; */
     font-family: opensans;
     flex-direction: column;
 }
@@ -53,8 +53,11 @@ img{
 }
 .page .pagefoot{
     width: 100% !important;
-    height: 50vh !important;
+    height: 100vh !important;
     flex-direction: column !important;
+}
+.page .pagefoot .pagefoot2{
+    box-shadow: 0px 0px 4px gray;
 }
 input{
     width: 100% !important;
@@ -86,6 +89,26 @@ form:hover{
     border-radius: 100% !important;
     background-color: gainsboro !important;
 }
+.newcircle{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 100% !important;
+    box-shadow: 0px 0px 4px black !important;
+}
+.summary{
+    font-size: 12px;
+    line-height: 0.9;
+    color: gray;
+}
+.summary ul{
+    list-style-type: none;
+    margin: 0%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+    padding-top: 2%;
+    line-height: 1.2;
+}
 .mpts{
     color: white !important;
     border: none !important;
@@ -94,6 +117,9 @@ form:hover{
     padding-right: 8% !important;
     padding-top: 1% !important;
     padding-bottom: 1% !important;
+}
+.handles{
+    font-size: 16px;
 }
 .bbder{
     border: 2px solid rgba(255, 0, 0, 0.75) !important;
@@ -126,6 +152,9 @@ form:hover{
 }
 .no-bder-o{
     border: none !important;
+}
+.display-6{
+    font-size: 20px !important;
 }
 .justify-content-evenly{
     justify-content: space-evenly !important;
