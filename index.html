@@ -36,6 +36,17 @@
             Sell on aliexpress
             <i class="fa-solid fa-caret-down"></i>
             |
+            <!-- dropdown options -->
+            <!-- <div class="dropdown">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Wide dropdown button to demonstrate this example
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </div> -->
           </button>
           <button class="no-bder">
             Help
@@ -57,11 +68,13 @@
             Account
             <span><i class="fa-solid fa-caret-down"></i></span> </button>
         </div>
-        <div class="row2 d-flex justify-content-around align-items-center">
+        <div class="row2 d-flex justify-content-around align-items-center sticky-top">
           <div class="search1 d-flex justify-content-around align-items-end w-90 h-60">
-            <div class="logo bg-light w-15 h-70">
+            <div class="logo d-flex align-items-center justify-content-right w-15 h-70">
               <a href="https://www.aliexpress.com">
-                <img src="./resources/dwd.png" alt="Aliexpress logo" title="Aliexpress" height="100%" width="100%">
+                <span class="text-red display-5">Ali</span>
+                <span class="text-orangered display-5">Express</span>
+                <span><sup class="text-red">TM</sup></span>
               </a>
             </div>
             <div class="seek bbder rad-small d-flex justify-content-between align-items-center bg-light w-60 h-70">
@@ -80,8 +93,8 @@
                 class="fa-solid fa-magnifying-glass d-flex align-items-center justify-content-around text-light bg-danger w-07 h-100 rad-small-right">
               </div>
             </div>
-            <div class="cart d-flex align-items-center justify-content-left bg-light w-15 h-70 text-dark">
-              <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <div class="cart d-flex align-items-center justify-content-left w-15 h-70 text-dark">
+              <button class="no-bder"><i class="fa-solid fa-cart-shopping"></i></button>
             </div>
           </div>
           <div class="search2 d-flex align-items-start w-55 h-30">
@@ -98,7 +111,19 @@
     <main>
       <div class="pagebody d-flex justify-content-around align-items-center">
         <div class="pagebody1 d-flex justify-content-between w-90 h-30">
-          <div class="left w-25 h-100 bg-light rad"></div>
+          <div class="left w-25 h-100 bg-light rad">
+            <!-- Dropright menus -->
+            <div class="dropdown dropright">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropright button
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
           <div class="right d-flex w-73 h-100 justify-content-between">
             <div class="up d-flex justify-content-left align-items-center h-07 w-100">
               <button class="no-bder text-danger">PLUS</button>
@@ -108,7 +133,38 @@
             <div class="down d-flex justify-content-between h-90 w-100">
               <div class="downleft d-flex flex-column justify-content-between w-73 h-100">
                 <div class="downleftup w-100 h-55 bg-dark rad">
-                  <!-- carousel -->
+                  <!-- carousel edit it later on -->
+                  <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                  
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="la.jpg" alt="Los Angeles">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="chicago.jpg" alt="Chicago">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="ny.jpg" alt="New York">
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                   <!-- Carousel ending part but extend for 6 carousels characters -->
+                  </div>
                 </div>
                 <div class="downleftdown d-flex w-100 h-40 bg-white rad">
                   <div class="dldcontent1 d-flex justify-content-between rad align-items-center flex-column w-20 h-100">
@@ -331,8 +387,8 @@
             </div>
           </div>
           <div class="plus d-flex flex-column align-items-center rad w-95 h-23 rad">
-            <div class="top d-flex justify-content-between rad w-100 h-15 bg-light">
-              <div class="plus-icon d-flex align-items-centerw-10 h-100 pl-3">
+            <div class="top d-flex justify-content-between rad w-100 h-15">
+              <div class="plus-icon d-flex align-items-center w-10 h-100 pl-3">
                 <button class="no-bder"><b><i class="text-danger">PLUS</i></b></button>
               </div>
               <div class="dicount-shipping-icon d-flex align-items-center w-78 h-100">
@@ -349,7 +405,7 @@
                 <button class="no-bder">View more</button>
               </div>
             </div>
-            <div class="down d-flex justify-content-between align-items-center w-100 h-85 rad bg-light">
+            <div class="down d-flex justify-content-between align-items-center w-100 h-85 rad">
               <div class="content rad d-flex flex-column justify-content-between align-items-center w-16 h-95">
                 <div class="pic d-flex align-items-center justify-content-around w-100 h-60 rad">
                   <img src="./resources/hdp2.jpg" alt="Military camouflagged headphones"
@@ -901,7 +957,7 @@
               <div class="icon d-flex align-items-center text-center justify-content-around w-100 h-45">
                 <!-- dollar in a circle icon -->
                 <div class="newcircle d-flex text-center justify-content-around align-items-center">
-                  <span><i class="fa-solid fa-moving-truck"></i></span>
+                  <span><i class="fa-solid fa-truck"></i></span>
                 </div>
               </div>
               <div
@@ -931,7 +987,7 @@
               <div class="icon d-flex align-items-center text-center justify-content-around w-100 h-45">
                 <!-- dollar in a circle icon -->
                 <div class="newcircle d-flex text-center justify-content-around align-items-center">
-                  <span><i class="fa-solid fa-shield-mark-right"></i></span>
+                  <span><i class="fa-solid fa-shield"></i></span>
                 </div>
               </div>
               <div
@@ -946,7 +1002,7 @@
               <div class="icon d-flex align-items-center text-center justify-content-around w-100 h-45">
                 <!-- dollar in a circle icon -->
                 <div class="newcircle d-flex text-center justify-content-around align-items-center">
-                  <span><i class="fa-solid fa-double-user"></i></span>
+                  <span><i class="fa-solid fa-users"></i></span>
                 </div>
               </div>
               <div
@@ -961,7 +1017,8 @@
               <div class="icon d-flex align-items-center text-center justify-content-around w-100 h-45">
                 <!-- dollar in a circle icon -->
                 <div class="newcircle d-flex text-center justify-content-around align-items-center">
-                  <span><i class="fa-solid fa-apple fa-andriod"></i></span>
+                  <span><i class="fa-solid fa-robot"></i></span>
+                  <span><i class="fa-brands fa-apple"></i></span>
                 </div>
               </div>
               <div
@@ -976,16 +1033,16 @@
         </div>
         <div class="pagefoot2 d-flex justify-content-around w-100 h-30">
           <div class="contenthold d-flex align-items-center justify-content-between w-89 h-100">
-            <div class="content-first d-flex flex-column align-items-center justify-content-around w-24 h-100">
-              <div class="heading font-weight-bold display-6 align-items-center justify-content-around w-95 h-15">
+            <div class="content-first d-flex flex-column align-items-center  w-24 h-100">
+              <div class="heading d-flex font-weight-bold display-6 align-items-end pl-3 w-95 h-40">
                 Stay connected
               </div>
-              <div class="icon d-flex align-items-center justify-content-around w-95 h-30">
-                <span><i class="fa-solid fa-facebook handles"></i></span>
-                <span><i class="fa-solid fa-twitter handles"></i></span>
-                <span><i class="fa-solid fa-instagram handles"></i></span>
-                <span><i class="fa-solid fa-messenger handles"></i></span>
-                <span><i class="fa-solid fa-whatsapp handles"></i></span>
+              <div class="icon d-flex align-items-start justify-content-around w-95 h-60">
+                <span><i class="fa-brands fa-facebook"></i></span>
+                <span><i class="fa-brands fa-twitter"></i></span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+                <span><i class="fa-brands fa-facebook-messenger"></i></span>
+                <span><i class="fa-brands fa-whatsapp"></i></span>
               </div>
             </div>
             <div class="content-others d-flex flex-column align-items-center justify-content-evenly w-24 h-100">
