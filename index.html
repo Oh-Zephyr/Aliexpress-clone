@@ -32,43 +32,73 @@
        the search line would take position stick with z-index,  -->
       <div class="pagehead d-flex">
         <div class="row1 d-flex align-items-center justify-content-right pr-4">
-          <button class="no-bder">
-            Sell on aliexpress
-            <i class="fa-solid fa-caret-down"></i>
-            |
             <!-- dropdown options -->
-            <!-- <div class="dropdown">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Wide dropdown button to demonstrate this example
+            <div class="dropdown">
+              <button type="button" class="btn no-bder dropdown-toggle" data-toggle="dropdown">
+                Sell on aliexpress
               </button>
               <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" href="#">Seller Log In</a>
+                <a class="dropdown-item" href="#">Change Language</a>
+                <a class="dropdown-item" href="#">Non-Chinese Seller Registration</a>
               </div>
-            </div> -->
-          </button>
-          <button class="no-bder">
+            </div>
+            <span>|</span>
+          <!-- dropdown options -->
+          <div class="dropdown">
+            <button type="button" class="btn no-bder dropdown-toggle" data-toggle="dropdown">
             Help
-            <span><i class="fa-solid fa-caret-down"></i></span>
-          </button>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Help Center</a>
+              <a class="dropdown-item" href="#">Disputes & Reports</a>
+              <a class="dropdown-item" href="#">Report IPR Infringements</a>
+            </div>
+            <span>|</span>
+          </div>
           <button class="no-bder"> Buyer Protection</button>
           <button class="no-bder">
             <span><i class="fa-solid fa-mobile-button"></i></span>
-            App |</button>
-          <button class="no-bder">
-            Location
-            <span><i class="fa-solid fa-caret-down"></i></span>
-            |</button>
+            App </button>
+            <span>|</span>
+          <!-- dropdown options -->
+          <div class="dropdown">
+            <button type="button" class="btn no-bder dropdown-toggle" data-toggle="dropdown">
+              Location
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">
+                Choose Shipping positon</a>
+              <a class="dropdown-item" href="#">Choose Shippping Destination</a>
+              <a class="dropdown-item" href="#">Change Currency</a>
+            </div>
+          </div>
+          <span>|</span>
           <button class="no-bder">
             <span><i class="fa-regular fa-heart"></i></span>
             Wishlist</button>
-          <button class="no-bder">
-            <span><i class="fa-regular fa-user"></i></span>
+          <span>|</span>
+           <!-- dropdown options -->
+           <div class="dropdown">
+            <button type="button" class="btn no-bder dropdown-toggle" data-toggle="dropdown">
+              <span><i class="fa-regular fa-user"></i></span>
             Account
-            <span><i class="fa-solid fa-caret-down"></i></span> </button>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#">Welcome to Aliexpress</a>
+              <a class="dropdown-item bg-danger text-light" href="#">Register</a>
+              <a class="dropdown-item bg-lgrey text-dark" href="#">Login</a>
+              <a class="dropdown-item" href="#">My orders</a>
+              <a class="dropdown-item" href="#">My coins</a>
+              <a class="dropdown-item" href="#">Message Center</a>
+              <a class="dropdown-item" href="#">Payment </a>
+              <a class="dropdown-item" href="#">Wishlist</a>
+              <a class="dropdown-item" href="#">My favorite stores</a>
+              <a class="dropdown-item" href="#">My coupons</a>
+            </div>
+          </div>
         </div>
-        <div class="row2 d-flex justify-content-around align-items-center sticky-top">
+        <div class="row2 d-flex justify-content-around align-items-center">
           <div class="search1 d-flex justify-content-around align-items-end w-90 h-60">
             <div class="logo d-flex align-items-center justify-content-right w-15 h-70">
               <a href="https://www.aliexpress.com">
@@ -84,18 +114,30 @@
                 </form>
               </div>
               <div class="categories d-flex align-items-center justify-content-around w-18 h-100 bder-l bder-r">
-                <span>
-                  All Categories
-                </span>
-                <span><i class="fa-solid fa-caret-down"></i></span>
+                <div class="dropdown">
+                  <button type="button" class="btn no-bder dropdown-toggle" data-toggle="dropdown">
+                    All categories
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Women's Fashion</a>
+                    <a class="dropdown-item" href="#">Men's Fashion</a>
+                    <a class="dropdown-item" href="#">Phones & Telecommunications</a>
+                    <a class="dropdown-item" href="#">Computer, Office & Security</a>
+                    <a class="dropdown-item" href="#">Consumer Electronics</a>
+                    <a class="dropdown-item" href="#">Jewellry & Watches</a>
+                    <a class="dropdown-item" href="#">Home, Pet & Appliances</a>
+                    <a class="dropdown-item" href="#">Bags & Shoes</a>
+                    <a class="dropdown-item" href="#">Toys, Kids & Babies</a>
+                    <a class="dropdown-item" href="#">Outdoor, Fun & Sports</a>
+                    <a class="dropdown-item" href="#">Bueaty, Health & Hair</a>
+                    <a class="dropdown-item" href="#">Automobiles & Motorcycles</a>
+                    <a class="dropdown-item" href="#">Tools & Home Improvements</a>
+                  </div>
+                </div>
               </div>
-              <div
-                class="fa-solid fa-magnifying-glass d-flex align-items-center justify-content-around text-light bg-danger w-07 h-100 rad-small-right">
-              </div>
+                <button class="fa-solid fa-magnifying-glass d-flex align-items-center justify-content-around bg-danger w-07 h-100  no-bder-o text-light rad-small-right"></button>
             </div>
-            <div class="cart d-flex align-items-center justify-content-left w-15 h-70 text-dark">
-              <button class="no-bder"><i class="fa-solid fa-cart-shopping"></i></button>
-            </div>
+              <button class="fa-solid fa-cart-shopping cart d-flex align-items-center justify-content-left w-15 h-70 text-dark no-bder"></button>
           </div>
           <div class="search2 d-flex align-items-start w-55 h-30">
             <button class="no-bder">car charger |</button>
@@ -123,14 +165,24 @@
                 <a class="dropdown-item" href="#">Link 3</a>
               </div>
             </div>
+            <div class="dropdown dropright">
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Dropright button
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </div>
           </div>
           <div class="right d-flex w-73 h-100 justify-content-between">
-            <div class="up d-flex justify-content-left align-items-center h-07 w-100">
+            <div class="up d-flex justify-content-left align-items-center h-04 w-100">
               <button class="no-bder text-danger">PLUS</button>
               <button class="no-bder"><b>Cool Home Deals</b></button>
               <button class="no-bder"><b>Super Deals</b></button>
             </div>
-            <div class="down d-flex justify-content-between h-90 w-100">
+            <div class="down d-flex justify-content-between h-93 w-100">
               <div class="downleft d-flex flex-column justify-content-between w-73 h-100">
                 <div class="downleftup w-100 h-55 bg-dark rad">
                   <!-- carousel edit it later on -->
@@ -149,22 +201,22 @@
                     <!-- The slideshow -->
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="la.jpg" alt="Los Angeles">
+                        <img src="./resources/banner-1.webp" alt="Los Angeles" width="100%" height="75%">
                       </div>
                       <div class="carousel-item">
-                        <img src="chicago.jpg" alt="Chicago">
+                        <img src="./resources/banner-2.webp" alt="Chicago" width="100%" height="50%">
                       </div>
                       <div class="carousel-item">
-                        <img src="ny.jpg" alt="New York">
+                        <img src="./resources/banner-3.webp" alt="New York" width="100%" height="50%">
                       </div>
                       <div class="carousel-item">
-                        <img src="ny.jpg" alt="New York">
+                        <img src="./resources/banner-4.webp" alt="New York" width="100%" height="50%">
                       </div>
                       <div class="carousel-item">
-                        <img src="ny.jpg" alt="New York">
+                        <img src="./resources/banner-5.webp" alt="New York" width="100%" height="50%">
                       </div>
                       <div class="carousel-item">
-                        <img src="ny.jpg" alt="New York">
+                        <img src="./resources/banner-6.webp" alt="New York" width="100%" height="50%">
                       </div>
                     </div>
                   
