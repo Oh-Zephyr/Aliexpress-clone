@@ -487,8 +487,8 @@ sup{
         display: flex;
         flex-direction: column;
     }
-    .pagebody1 .right .down .downright .text-only .smalltext{
-        display: none;
+    .pagebody{
+        display: inline-block; !important;
     }
     .pagebody4 buttons{
         font-size: 12px;
